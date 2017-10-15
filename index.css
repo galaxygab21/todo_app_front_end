@@ -90,53 +90,55 @@ input[type="text"], input[type="number"]{
 .completed-todo{
   text-decoration: line-through;
 }
-
-.strikethrough {
-	display: inline-block;
-	position: relative;
-	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+label {
+  font-size: 1.5em;
 }
 
-.strikethrough:after {
-	content: '';
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: 2px;
-	box-shadow: 0 1px rgba(255,255,255,0.6);
-	margin-top: -0.7em;
-	background: black;
-	transform-origin: center left;
-	animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
-	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+input[type=checkbox]:checked + label {
+  color:black;
+  text-decoration: line-through;
 }
 
-
-/* Little hover effect */
-
-.strikethrough:hover {
-	color: #87CEFA;
-	background: rgba(255, 189, 182, 0.3);
+.cbox1 {
+  color:blue;
+  text-decoration: line-through;
 }
 
-.strikethrough:hover:after {
-	transform: scaleX(0);
-	transform-origin: center right;
+.cbox2 {
+  color:blue;
+  text-decoration: line-through;
 }
 
-
-
-
-/* Keyframes for initial animation */
-
-@keyframes strikethrough {
-	from {
-		transform: scaleX(0);
-	}
-	to {
-		transform: scaleX(1);
-	}
+.cbox3 {
+  color:blue;
+  text-decoration: line-through;
 }
+
+.cbox4 {
+  color:blue;
+  text-decoration: line-through;
+}
+
+.cbox5 {
+  color:blue;
+  text-decoration: line-through;
+}
+
+.cbox6 {
+  color:blue;
+  text-decoration: line-through;
+}
+
+.cbox7 {
+  color:blue;
+  text-decoration: line-through;
+}
+
+.cbox8 {
+  color:blue;
+  text-decoration: line-through;
+}
+
 .imgContainer { 
     width: 200px;
     margin: 0 auto;
